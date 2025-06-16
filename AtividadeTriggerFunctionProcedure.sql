@@ -29,9 +29,10 @@ CREATE TABLE ALUNOS (
 );
 
 -- 2) Tabela LOG_ALTERACOES
+DROP TABLE LOG_ALTERACOES;
 CREATE TABLE LOG_ALTERACOES (
   id_log      NUMBER           NOT NULL,
-  acao        VARCHAR2(10)     NOT NULL,
+  acao        VARCHAR2(20)     NOT NULL,
   tabela      VARCHAR2(30)     NOT NULL,
   data_evento DATE             NOT NULL,
   CONSTRAINT LOG_ALTERACOES_PK PRIMARY KEY (id_log)
